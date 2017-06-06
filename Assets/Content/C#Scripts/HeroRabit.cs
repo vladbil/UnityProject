@@ -13,6 +13,8 @@ public class HeroRabit : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		myBody = this.GetComponent<Rigidbody2D> ();
+		//Зберігаємо позицію кролика на початку
+		LevelController.current.setStartPosition (transform.position);
 	}
 	
 	// Update is called once per frame
